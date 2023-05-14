@@ -1,6 +1,7 @@
 import axios from "axios";
 
 export const getMovies = (searchTerm, setMovies) => {
+    searchTerm = searchTerm.length > 0 ? searchTerm : "t";
     axios
         .get(`https://api.themoviedb.org/3/search/movie?query=${searchTerm}`, {
             headers: {

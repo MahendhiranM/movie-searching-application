@@ -16,7 +16,7 @@ img{
   margin: 0 auto;
 }
 .bg-color-1{
-  background-color: #395B64;
+  background: linear-gradient(to right, #51727a, #395B64);
 }
 .is-title{
   font-size: 1.2rem;
@@ -63,7 +63,8 @@ img{
 }
 .is-card .is-title{
   padding-top: .75rem;
-  font-size: .75rem;
+  font-size: .9rem;
+  font-weight: 600;
 }
 .is-card .is-desc{
   padding-top: .5rem;

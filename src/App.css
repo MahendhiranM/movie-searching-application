@@ -1,38 +1,97 @@
-.App {
-  text-align: center;
+/* comman start */
+section{
+  padding: 3rem 0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+img{
+  width: 100%;
+  max-width: 100%;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.is-container-fluid{
+  width: 100%;
+  height: auto;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.is-container{
+  width: 1200px;
+  height: auto;
+  margin: 0 auto;
+}
+.bg-color-1{
+  background-color: #395B64;
+}
+.is-title{
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.input{
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  outline: none;
+}
+.is-flex{
+  gap: 1rem;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+/* comman end */
+
+
+/* Search component start */
+.search .is-title{
+  padding-bottom: 1rem;
+  color: #ffffff;
+}
+/* Search component end */
+
+/* card start */
+.is-card{
+  width: 200px;
+}
+.is-card .card-img{
+  width: 100%;
+  height: 300px;
+}
+.is-card .is-title{
+  padding-top: .75rem;
+  font-size: .75rem;
+}
+.is-card .is-desc{
+  padding-top: .5rem;
+  font-weight: light;
+  color: red;
+  font-size: .75rem;
+}
+.is-card .release-date{
+  padding-top: .25rem;
+  font-size: .75rem;
+  color: #2C3333;
+}
+.is-card .no-image{
+  width: 100%;
+  height: 300px;
+  background-color: #303030;
+}
+/* card end */
+
+@media screen and (max-width: 600px) {
+  .is-container {
+    max-width: 100%;
+    padding: 0 10px;
+  }
 }
 
-.App-link {
-  color: #61dafb;
+@media screen and (min-width: 601px) and (max-width: 960px) {
+  .is-container {
+    max-width: 90%;
+    padding: 0 20px;
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media screen and (min-width: 961px) and (max-width: 1200px) {
+  .is-container {
+    max-width: 80%;
+    padding: 0 30px;
   }
 }
+
